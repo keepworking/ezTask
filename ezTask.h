@@ -1,3 +1,7 @@
+/* 2016 yevgeny hong
+  메카솔루션 ezTask 라이브러리
+*/
+
 #ifndef EZ_TASK
 #define EZ_TASK
 
@@ -30,8 +34,8 @@ public:
       else if(now - lastMillis < Cycle){
         return;
       }
-      func();
       lastMillis = millis();
+      func();
   }
 
 
