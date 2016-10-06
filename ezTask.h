@@ -1,5 +1,6 @@
 /* 2016 yevgeny hong
   메카솔루션 ezTask 라이브러리
+  블로깅 거리가 없어서 라이브러리를 만드는 우리의 심정을 누가 알아줄까
 */
 
 #ifndef EZ_TASK
