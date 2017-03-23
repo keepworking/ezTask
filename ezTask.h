@@ -1,6 +1,6 @@
 /* 2016 yevgeny hong
-  ¸ŞÄ«¼Ö·ç¼Ç ezTask ¶óÀÌºê·¯¸®
-  ºí·Î±ë °Å¸®°¡ ¾ø¾î¼­ ¶óÀÌºê·¯¸®¸¦ ¸¸µå´Â ¿ì¸®ÀÇ ½ÉÁ¤À» ´©°¡ ¾Ë¾ÆÁÙ±î
+  ë©”ì¹´ì†”ë£¨ì…˜ ezTask ë¼ì´ë¸ŒëŸ¬ë¦¬
+  ë¸”ë¡œê¹… ê±°ë¦¬ê°€ ì—†ì–´ì„œ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë§Œë“œëŠ” ìš°ë¦¬ì˜ ì‹¬ì •ì„ ëˆ„ê°€ ì•Œì•„ì¤„ê¹Œ
 */
 
 #ifndef EZ_TASK
@@ -14,6 +14,10 @@
 
 class ezTask{
 public:
+  
+  
+  unsigned long Cycle;
+  
   ezTask(unsigned long cycle, void (*userFunc)(void)){
     func = userFunc;
     Cycle = cycle;
@@ -42,7 +46,6 @@ public:
 
 private:
   void (*func)(void);
-  unsigned long Cycle;
   unsigned long lastMillis = 0;
   boolean isrun = false;
 };
